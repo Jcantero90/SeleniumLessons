@@ -30,7 +30,7 @@ class TestStringMethods(unittest.TestCase):
     def setUp(self):
         self.driver = webdriver.Chrome(executable_path="C:\Drivers\chromedriver.exe")
 
-#Es nuestro test, aquí usamor la variable self.driver para realizar las pruebas que necesitesmo.
+#Es nuestro test, aquí usamor la variable self.driver para realizar las pruebas que necesitesmos.
     def test1(self):
         self.driver.get("https://demoqa.com/text-box")
         time.sleep(2)
@@ -38,7 +38,7 @@ class TestStringMethods(unittest.TestCase):
     def test2(self):
         self.driver.get("https://demoqa.com/text-box")
         self.driver.find_element_by_css_selector("#userName").send_keys("Name")
-        time.sleep(2)
+        time.sleep(4)
 
 #El tearDown es para cerrar nuestros test.
     def tearDown(self):

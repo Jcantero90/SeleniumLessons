@@ -28,7 +28,7 @@ nom.send_keys("Yoni"  #escribimos el dato del primer text box.
               + "Huevo kinder"
               )
 
-
+elements = driver.find_element_by_css_selector("#submit")
 elements.click()
 
 time.sleep(2)
